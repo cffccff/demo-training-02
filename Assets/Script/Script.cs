@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
-
 public class Script : MonoBehaviour
 
 {
@@ -94,11 +93,28 @@ public class Script : MonoBehaviour
       passint=  ChangeValue(passint);
 
         Debug.Log(passint);
+        //class
+        Student student1 = new Student(1, "Alex");
+        ChangeReferenceType(student1);
+        string name_Student = student1.Name;
+        Debug.Log(name_Student);
 
+        //Operator
+        string greet1 = "Hello " + "World!";
+        string greet2 = greet1 + "C#";
+        Debug.Log(greet2);
+
+        int number1 = 10;
+        int number2 = 20;
+        int result = number1 + number2 - 10;
+        Debug.Log(result);
 
 
     }
-
+    public static void ChangeReferenceType(Student std2)
+    {
+        std2.Name = "Steve";
+    }
     // Update is called once per frame
     void Update()
     {
