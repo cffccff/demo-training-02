@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
+using ExtensionClass;
 public class Script : MonoBehaviour
 
 {
@@ -109,8 +110,48 @@ public class Script : MonoBehaviour
         int result = number1 + number2 - 10;
         Debug.Log(result);
 
+        //Nullable
+        int? inull = null;
+        int jnull = 10;
 
+
+        if (inull < jnull)
+           Debug.Log("i < j");
+        else if (inull > 10)
+            Debug.Log("i > j");
+        else if (inull == 10)
+            Debug.Log("i == j");
+        else
+            Debug.Log("Could not compare");
+        inull = 20;
+        if (inull < jnull)
+            Debug.Log("i < j");
+        else if (inull > 10)
+            Debug.Log("i > j");
+        else if (inull == 10)
+            Debug.Log("i == j");
+        else
+            Debug.Log("Could not compare");
+        //Extension method
+        int iextension = 10;
+
+        bool resultextension = iextension.IsGreaterThan(100);
+
+        Debug.Log(resultextension);
+
+        //Static Class
+
+        var resultcal = Calculator.Sum(10, 25); // calling static method
+        Calculator.Store(resultcal);
+        Debug.Log(resultcal);
+        var calcType = Calculator.Type; // accessing static variable
+        Calculator.Type = "Scientific"; // assign value to static variable
+        Debug.Log(calcType);
+        var calcType1 = Calculator.Type;
+        Debug.Log(calcType1);
     }
+
+
     public static void ChangeReferenceType(Student std2)
     {
         std2.Name = "Steve";
