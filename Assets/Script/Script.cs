@@ -155,253 +155,385 @@ public class Script : MonoBehaviour
         // Thusday
 
         //if ifelse else statement
-        int i = 10, j = 10;
+        // int i = 10, j = 10;
 
-        if (isGreater(i, j))
+        // if (isGreater(i, j))
+        // {
+        //     Debug.Log("i is less than j");
+        // }
+
+        //else if (isGreater(j, i))
+        // {
+        //     Debug.Log("j is greater than i");
+        // }
+        // else
+        // {
+        //     Debug.Log("i and j is equal");
+        // }
+
+        // //  Tenary Operator
+        // int x1 = 20, y1 = 10;
+
+        // var resultTenary = x1 > y1 ? "x1 is greater than y1" : "x1 is less than y1";
+
+        // Debug.Log(resultTenary);
+
+        // int x = 10, y = 100;
+
+        // string resultTenary1 = x > y ? "x is greater than y" :
+        //                     x < y ? "x is less than y" :
+        //                         x == y ? "x is equal to y" : "No result";
+
+        // Debug.Log(resultTenary1);
+
+
+        // //Switch
+
+        // int sw = 4;
+
+        // switch (sw)
+        // {
+        //     case 1:
+        //         Debug.Log("sw = 1");
+        //         break;
+        //     case 2:
+        //         Debug.Log("sw = 2");
+        //         break;
+        //     case 4:
+        //     case 5:
+        //         Debug.Log("sw = 4 or sw = 5");
+        //         break;
+        //     default:
+        //         Debug.Log("x > 5");
+        //         break;
+        // }
+
+
+        // int swj = 5;
+
+        // switch (swj)
+        // {
+        //     case 5:
+        //         Debug.Log(5);
+        //         switch (swj - 1)
+        //         {
+        //             case 4:
+        //                 Debug.Log(4);
+        //                 switch (swj - 2)
+        //                 {
+        //                     case 3:
+        //                         Debug.Log(3);
+        //                         break;
+        //                 }
+        //                 break;
+        //         }
+        //         break;
+        //     case 10:
+        //         Debug.Log(10);
+        //         break;
+        //     case 15:
+        //         Debug.Log(15);
+        //         break;
+        //     default:
+        //         Debug.Log(100);
+        //         break;
+        // }
+
+
+
+        // //For loop
+        // for (int iloop = 0; iloop < 10; iloop++)
+        // {
+        //     if (iloop == 5)
+        //         break;
+        //     Debug.Log("iloop");
+        //     Debug.Log(iloop);
+        // }
+
+        // for (int iNestLoop = 0; iNestLoop < 2; iNestLoop++)
+        // {
+        //     for (int jNestLoop = iNestLoop; jNestLoop < 4; jNestLoop++)
+        //     {
+        //         Debug.Log("iNestLoop"); Debug.Log(iNestLoop);
+        //         Debug.Log("jNestLoop"); Debug.Log(jNestLoop);
+        //     }
+
+        // }
+
+        // // while
+        // Debug.Log(" while practice");
+        // int iWhile = 0, jWhile = 1;
+
+        // while (iWhile < 2)
+        // {
+        //     Debug.Log("iWhile");
+        //     Debug.Log(iWhile);
+        //     iWhile++;
+
+        //     while (jWhile < 2)
+        //     {
+        //         Debug.Log("jWhile");
+        //         Debug.Log(jWhile);
+        //         jWhile++;
+        //     }
+        // }
+
+        // //do white
+
+        // int iDoWhile = 0;
+        // Debug.Log(" do while practice");
+        // do
+        // {
+        //     Debug.Log("iDoWhile");
+        //     Debug.Log(iDoWhile);
+        //     iDoWhile++;
+
+        //     if (iDoWhile > 5)
+        //         break;
+
+        // } while (iDoWhile < 10);
+
+
+        // //Array
+        // string[] cities = { "Mumbai", "London", "New York" };
+
+
+        // foreach (var city in cities)
+        //     Debug.Log(city);
+
+        // int[] nums = new int[5] { 10, 15, 16, 8, 6 };
+
+        // Debug.Log(nums.Max());
+        // Debug.Log(nums.Min());
+        // Debug.Log(nums.Sum());
+        // Debug.Log(nums.Average());
+
+        // //2d array
+
+        // int[,] arr2d = new int[3, 2]{
+        //                         {1, 2},
+        //                         {3, 4},
+        //                         {5, 6}
+        //                     };
+
+
+        // Debug.Log(arr2d[0, 0]); //returns 1
+        // Debug.Log(arr2d[0, 1]); //returns 2
+        // Debug.Log(arr2d[1, 0]);  //returns 3
+        // Debug.Log(arr2d[1, 1]); //returns 4
+        // Debug.Log(arr2d[2, 0]); //returns 5
+        // Debug.Log(arr2d[2, 1]); //returns 6
+
+        // //Jagged Array
+
+        // int[][][] intJaggedArray = new int[2][][]
+        //                     {
+        //                         new int[2][]
+        //                         {
+        //                             new int[3] { 1, 2, 3},
+        //                             new int[2] { 4, 5}
+        //                         },
+        //                         new int[1][]
+        //                         {
+        //                             new int[3] { 7, 8, 9}
+        //                         }
+        //                     };
+
+        //Debug.Log(intJaggedArray[0][0][0]); // 1
+
+        //Debug.Log(intJaggedArray[0][1][1]); // 5
+
+        //Debug.Log(intJaggedArray[1][0][2]); // 9
+
+        // //Array List
+        // var arlist1 = new ArrayList();
+
+        // var arlist2 = new ArrayList()
+        //             {
+        //                 1, "Bill", " ", true, 4.5, null
+        //             };
+
+        // int[] arr = { 100, 200, 300, 400 };
+
+        // Queue myQ = new Queue();
+        // myQ.Enqueue("Hello");
+        // myQ.Enqueue("World!");
+
+        // arlist1.AddRange(arlist2); //adding arraylist in arraylist 
+        // arlist1.AddRange(arr); //adding array in arraylist 
+        // arlist1.AddRange(myQ); //adding Queue in arraylist 
+        // //add item in index 1 in array
+        // arlist2.Insert(1, "Second Item");
+        // foreach (var val in arlist2)
+        //    Debug.Log(val);
+        // //remove index 2 in array
+        // arlist2.RemoveAt(2);
+        // foreach (var val in arlist2)
+        //     Debug.Log(val);
+
+        // //list 
+
+        // var bigCities = new List<string>()
+        //             {
+        //                 "New York",
+        //                 "London",
+        //                 "Mumbai",
+        //                 "Chicago"
+        //             };
+        // string[] cities1 = new string[3] { "Mumbai", "London", "New York" };
+        // //add range
+        // bigCities.AddRange(cities1);
+        // foreach (var val in bigCities)
+        //     Debug.Log(val);
+
+
+        // //sorted list
+        // SortedList<int, string> numberNames = new SortedList<int, string>()
+        //                             {
+        //                                 {3, "Three"},
+        //                                 {1, "One"},
+        //                                 {2, "Two"}
+        //                             };
+
+        //Debug.Log(numberNames[1]); //output: One
+        //Debug.Log(numberNames[2]); //output: Two
+        //Debug.Log(numberNames[3]); //output: Three
+        //                           //Console.WriteLine(numberNames[10]); //run-time KeyNotFoundException
+
+        // numberNames.RemoveAt(0);//removes key-value pair from index 0 
+        // numberNames.Remove(1);//removes key 1 pair
+
+
+        //friday
+
+        var cities = new Dictionary<string, string>(){
+    {"UK", "London, Manchester, Birmingham"},
+    {"USA", "Chicago, New York, Washington"},
+    {"India", "Mumbai, New Delhi, Pune"}
+};
+
+       Debug.Log(cities["UK"]); //prints value of UK key
+       Debug.Log(cities["USA"]);//prints value of USA key
+
+        // Access Dictionary Elements
+        Debug.Log(cities.ElementAt(0).Key);
+        Debug.Log(cities.ElementAt(0).Key);
+
+        //update
+        cities["UK"] = "Liverpool, Bristol"; // update value of UK key
+        cities["USA"] = "Los Angeles, Boston"; // update value of USA key
+                                               //cities["France"] = "Paris"; //throws run-time exception: KeyNotFoundException
+
+        if (cities.ContainsKey("India"))
         {
-            Debug.Log("i is less than j");
+            cities["India"] = "Paris";
         }
 
-       else if (isGreater(j, i))
+        foreach (var kvp in cities)
         {
-            Debug.Log("j is greater than i");
-        }
-        else
-        {
-            Debug.Log("i and j is equal");
+            Debug.Log(kvp.Key);
+            Debug.Log(kvp.Value);
         }
 
-        //  Tenary Operator
-        int x1 = 20, y1 = 10;
+        //hashtable
+        Hashtable numberNames = new Hashtable();
+        numberNames.Add(1, "One"); //adding a key/value using the Add() method
+        numberNames.Add(2, "Two");
+        numberNames.Add(3, "Three");
 
-        var resultTenary = x1 > y1 ? "x1 is greater than y1" : "x1 is less than y1";
+        //update
+        numberNames[1] = "one one";
+        numberNames[2] = "two two";
 
-        Debug.Log(resultTenary);
+        //access
 
-        int x = 10, y = 100;
-
-        string resultTenary1 = x > y ? "x is greater than y" :
-                            x < y ? "x is less than y" :
-                                x == y ? "x is equal to y" : "No result";
-
-        Debug.Log(resultTenary1);
-
-
-        //Switch
-
-        int sw = 4;
-
-        switch (sw)
+        foreach (DictionaryEntry kvp in numberNames)
         {
-            case 1:
-                Debug.Log("sw = 1");
-                break;
-            case 2:
-                Debug.Log("sw = 2");
-                break;
-            case 4:
-            case 5:
-                Debug.Log("sw = 4 or sw = 5");
-                break;
-            default:
-                Debug.Log("x > 5");
-                break;
+            Debug.Log(kvp.Key);
+            Debug.Log(kvp.Value);
         }
 
 
-        int swj = 5;
+        //stack Last in First out
 
-        switch (swj)
+        Stack<int> myStack = new Stack<int>();
+        myStack.Push(1);
+        myStack.Push(2);
+        myStack.Push(3);
+        myStack.Push(4);
+        myStack.Push(5);
+        myStack.Push(6);
+        myStack.Push(7);
+
+        //pop return last element and remove it from a stack
+
+        Debug.Log(myStack.Pop());
+        Debug.Log(myStack.Pop());
+
+        //peek returns the lastly added value from the stack but does not remove it
+
+        Debug.Log(myStack.Peek());
+        Debug.Log(myStack.Peek());
+
+
+        //contain
+      
+        Debug.Log(myStack.Contains(2));  // returns true
+        Debug.Log(myStack.Contains(10)); //return false
+
+
+        //queue (First In First Out)
+
+        Queue<int> callerIds = new Queue<int>();
+        callerIds.Enqueue(1);
+        callerIds.Enqueue(2);
+        callerIds.Enqueue(3);
+        callerIds.Enqueue(4);
+
+        foreach (var id in callerIds)
+           Debug.Log(id); //prints 1234
+        //Dequeue() removes and returns the first element from a queue because the queue stores elements in FIFO order
+        Queue<string> strQ = new Queue<string>();
+        strQ.Enqueue("H");
+        strQ.Enqueue("e");
+        strQ.Enqueue("l");
+        strQ.Enqueue("l");
+        strQ.Enqueue("o");
+
+       Debug.Log("Total elements: "+ strQ.Count); //prints 5
+
+        while (strQ.Count > 0)
+           Debug.Log(strQ.Dequeue()); //prints Hello
+
+       Debug.Log("Total elements: "+ strQ.Count); //prints 0
+        //The Peek() method always returns the first item from a queue collection without removing it from the queue
+
+        Queue<string> str = new Queue<string>();
+        str.Enqueue("H");
+        str.Enqueue("e");
+        str.Enqueue("l");
+        str.Enqueue("l");
+        str.Enqueue("o");
+
+       Debug.Log("Total elements: " +str.Count); //prints 5
+
+        if (str.Count > 0)
         {
-            case 5:
-                Debug.Log(5);
-                switch (swj - 1)
-                {
-                    case 4:
-                        Debug.Log(4);
-                        switch (swj - 2)
-                        {
-                            case 3:
-                                Debug.Log(3);
-                                break;
-                        }
-                        break;
-                }
-                break;
-            case 10:
-                Debug.Log(10);
-                break;
-            case 15:
-                Debug.Log(15);
-                break;
-            default:
-                Debug.Log(100);
-                break;
+           Debug.Log(str.Peek()); //prints H
+           Debug.Log(str.Peek()); //prints H
         }
 
+       Debug.Log("Total elements: " +str.Count); //prints 5
 
+        //contain 
+        Queue<int> callerId = new Queue<int>();
+        callerId.Enqueue(1);
+        callerId.Enqueue(2);
+        callerId.Enqueue(3);
+        callerId.Enqueue(4);
 
-        //For loop
-        for (int iloop = 0; iloop < 10; iloop++)
-        {
-            if (iloop == 5)
-                break;
-            Debug.Log("iloop");
-            Debug.Log(iloop);
-        }
-
-        for (int iNestLoop = 0; iNestLoop < 2; iNestLoop++)
-        {
-            for (int jNestLoop = iNestLoop; jNestLoop < 4; jNestLoop++)
-            {
-                Debug.Log("iNestLoop"); Debug.Log(iNestLoop);
-                Debug.Log("jNestLoop"); Debug.Log(jNestLoop);
-            }
-                
-        }
-
-        // while
-        Debug.Log(" while practice");
-        int iWhile = 0, jWhile = 1;
-
-        while (iWhile < 2)
-        {
-            Debug.Log("iWhile");
-            Debug.Log(iWhile);
-            iWhile++;
-
-            while (jWhile < 2)
-            {
-                Debug.Log("jWhile");
-                Debug.Log(jWhile);
-                jWhile++;
-            }
-        }
-
-        //do white
-
-        int iDoWhile = 0;
-        Debug.Log(" do while practice");
-        do
-        {
-            Debug.Log("iDoWhile");
-            Debug.Log(iDoWhile);
-            iDoWhile++;
-
-            if (iDoWhile > 5)
-                break;
-
-        } while (iDoWhile < 10);
-
-
-        //Array
-        string[] cities = { "Mumbai", "London", "New York" };
-
-       
-        foreach (var city in cities)
-            Debug.Log(city);
-
-        int[] nums = new int[5] { 10, 15, 16, 8, 6 };
-
-        Debug.Log(nums.Max());
-        Debug.Log(nums.Min());
-        Debug.Log(nums.Sum());
-        Debug.Log(nums.Average());
-
-        //2d array
-
-        int[,] arr2d = new int[3, 2]{
-                                {1, 2},
-                                {3, 4},
-                                {5, 6}
-                            };
-
-
-        Debug.Log(arr2d[0, 0]); //returns 1
-        Debug.Log(arr2d[0, 1]); //returns 2
-        Debug.Log(arr2d[1, 0]);  //returns 3
-        Debug.Log(arr2d[1, 1]); //returns 4
-        Debug.Log(arr2d[2, 0]); //returns 5
-        Debug.Log(arr2d[2, 1]); //returns 6
-
-        //Jagged Array
-
-        int[][][] intJaggedArray = new int[2][][]
-                            {
-                                new int[2][]
-                                {
-                                    new int[3] { 1, 2, 3},
-                                    new int[2] { 4, 5}
-                                },
-                                new int[1][]
-                                {
-                                    new int[3] { 7, 8, 9}
-                                }
-                            };
-
-       Debug.Log(intJaggedArray[0][0][0]); // 1
-
-       Debug.Log(intJaggedArray[0][1][1]); // 5
-
-       Debug.Log(intJaggedArray[1][0][2]); // 9
-
-        //Array List
-        var arlist1 = new ArrayList();
-
-        var arlist2 = new ArrayList()
-                    {
-                        1, "Bill", " ", true, 4.5, null
-                    };
-
-        int[] arr = { 100, 200, 300, 400 };
-
-        Queue myQ = new Queue();
-        myQ.Enqueue("Hello");
-        myQ.Enqueue("World!");
-
-        arlist1.AddRange(arlist2); //adding arraylist in arraylist 
-        arlist1.AddRange(arr); //adding array in arraylist 
-        arlist1.AddRange(myQ); //adding Queue in arraylist 
-        //add item in index 1 in array
-        arlist2.Insert(1, "Second Item");
-        foreach (var val in arlist2)
-           Debug.Log(val);
-        //remove index 2 in array
-        arlist2.RemoveAt(2);
-        foreach (var val in arlist2)
-            Debug.Log(val);
-
-        //list 
-
-        var bigCities = new List<string>()
-                    {
-                        "New York",
-                        "London",
-                        "Mumbai",
-                        "Chicago"
-                    };
-        string[] cities1 = new string[3] { "Mumbai", "London", "New York" };
-        //add range
-        bigCities.AddRange(cities1);
-        foreach (var val in bigCities)
-            Debug.Log(val);
-
-
-        //sorted list
-        SortedList<int, string> numberNames = new SortedList<int, string>()
-                                    {
-                                        {3, "Three"},
-                                        {1, "One"},
-                                        {2, "Two"}
-                                    };
-
-       Debug.Log(numberNames[1]); //output: One
-       Debug.Log(numberNames[2]); //output: Two
-       Debug.Log(numberNames[3]); //output: Three
-                                  //Console.WriteLine(numberNames[10]); //run-time KeyNotFoundException
-
-        numberNames.RemoveAt(0);//removes key-value pair from index 0 
-        numberNames.Remove(1);//removes key 1 pair
+        Debug.Log(callerId.Contains(2)); //true
+        Debug.Log(callerId.Contains(10)); //false
     }
 
 
